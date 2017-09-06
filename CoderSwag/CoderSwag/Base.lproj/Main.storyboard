@@ -33,15 +33,21 @@
                                 <rect key="frame" x="0.0" y="69.5" width="375" height="533.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="141" id="3fD-Vl-rgj" customClass="CategoryCell" customModule="CoderSwag" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="141"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="162" id="3fD-Vl-rgj" customClass="CategoryCell" customModule="CoderSwag" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="162"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3fD-Vl-rgj" id="5L8-jP-X3y">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="140.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3fD-Vl-rgj" id="5L8-jP-X3y">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="161.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHIRTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTO-zM-dZ9">
-                                                    <rect key="frame" x="102.5" y="50.5" width="170" height="40"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="shirts" translatesAutoresizingMaskIntoConstraints="NO" id="lVv-1V-fZy">
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="119.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="140" id="SR9-UR-NZ3"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SHIRTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTO-zM-dZ9">
+                                                    <rect key="frame" x="102" y="61" width="170" height="40.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="hPw-9j-Xff"/>
                                                         <constraint firstAttribute="width" constant="170" id="sqg-uJ-kXC"/>
@@ -50,17 +56,14 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="shirts" translatesAutoresizingMaskIntoConstraints="NO" id="lVv-1V-fZy">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="141.5"/>
-                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="KTO-zM-dZ9" firstAttribute="centerY" secondItem="5L8-jP-X3y" secondAttribute="centerY" id="4gz-CP-8Jd"/>
-                                                <constraint firstItem="lVv-1V-fZy" firstAttribute="top" secondItem="5L8-jP-X3y" secondAttribute="top" id="Cpk-D4-Xln"/>
-                                                <constraint firstAttribute="bottom" secondItem="lVv-1V-fZy" secondAttribute="bottom" id="VGp-5J-rIf"/>
-                                                <constraint firstAttribute="trailing" secondItem="lVv-1V-fZy" secondAttribute="trailing" id="h0S-V9-PDA"/>
+                                                <constraint firstAttribute="trailing" secondItem="lVv-1V-fZy" secondAttribute="trailing" id="TXJ-sU-a2d"/>
+                                                <constraint firstAttribute="bottom" secondItem="lVv-1V-fZy" secondAttribute="bottom" constant="3" id="Y3j-aJ-mWH"/>
+                                                <constraint firstItem="lVv-1V-fZy" firstAttribute="top" secondItem="5L8-jP-X3y" secondAttribute="top" constant="3" id="bSP-gr-mo6"/>
+                                                <constraint firstItem="lVv-1V-fZy" firstAttribute="leading" secondItem="5L8-jP-X3y" secondAttribute="leading" id="qFc-Ip-E5t"/>
                                                 <constraint firstItem="KTO-zM-dZ9" firstAttribute="centerX" secondItem="5L8-jP-X3y" secondAttribute="centerX" id="qKx-2K-icf"/>
-                                                <constraint firstItem="lVv-1V-fZy" firstAttribute="leading" secondItem="5L8-jP-X3y" secondAttribute="leading" id="t8P-9U-s3e"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
